@@ -1,0 +1,19 @@
+{% extends "master.html" %}
+{% block title %}Results{% endblock %}
+
+{% block message %}
+    <hr />
+    <h4 class="text-center">USER ID</h4>
+    <p class="text-center"><i>{{query}}</i></p>
+{% endblock %}
+
+{% block content %}
+    <h1 class="text-center">Results</h1>
+        <ul class="list-group">
+            {% for recommendation in rec_result %}
+                <li class="list-group-item list-group-item-dark text-center">{{recommendation}}</li>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}
